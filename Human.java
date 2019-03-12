@@ -2,7 +2,7 @@ package class_up; //Dragon Age: Origins
 
 public  class Human
 {
-    protected int age;
+    public int age;
     protected char sex;
     protected String job;
     protected  boolean superpowers;
