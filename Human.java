@@ -1,12 +1,12 @@
-package class_up;
+package class_up; //Dragon Age: Origins
 
-public abstract class Human
+public  class Human
 {
-    private int age;
-    private char sex;
-    private String job;
-    private  boolean superpowers;
-    private long power;
+    protected int age;
+    protected char sex;
+    protected String job;
+    protected  boolean superpowers;
+    protected long power = 1000;
 
     public int get_age()
     {
@@ -28,27 +28,13 @@ public abstract class Human
     {
         return job;
     }
-    public void set_job(String J)
-    {
-        this.job = J;
-    }
 
-    public  boolean is_superpow()
-    {
-        return superpowers;
-    }
-    public  void set_superpow(boolean SP)
-    {
-        this.superpowers = SP;
-    }
-    public long get_power()
-    {
-        return power;
-    }
-    public void set_power(long P)
-    {
-        this.power = P;
-    }
+
+
+
+
+
+
 
 
 
