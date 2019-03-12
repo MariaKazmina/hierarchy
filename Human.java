@@ -24,10 +24,7 @@ public  class Human
     {
         this.sex = S;
     }
-    public String get_job()
-    {
-        return job;
-    }
+
 
 
 
