@@ -39,7 +39,14 @@ public class  Witcher extends Human {
         }
     }
 
-
+    public int Mega(int health_enemy)//мега-атака, возвращает значение HP-противника
+    {
+        if(power<=500)
+        {
+            health_enemy -= 80;
+        }
+        return health_enemy;
+    }
 
 
 

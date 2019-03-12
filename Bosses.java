@@ -1,16 +1,14 @@
 package class_up;
 
-public class Warriors_animal implements Damage {
+public class Bosses implements Damage {
 
+    final int damage_boss = 60;
+    int power = 2000;
 
-
-
-    final  int damage_of_animal = 7; //константный урон
-    int power = 500;
 
     public int get_damage()//узнать константный урон
     {
-        return damage_of_animal;
+        return damage_boss;
     }
 
     public void damage(int damage)//получение урона
@@ -21,29 +19,35 @@ public class Warriors_animal implements Damage {
         }
 
     }
-    public void healing() //лечение
-    {
-        while(power<=500)
-        {
-            power += 10;
-        }
-    }
+
 
     public  void do_damage(int health_enemy) //нанесение урона
     {
         if(health_enemy>0)
         {
-            health_enemy -= damage_of_animal;
+            health_enemy -= damage_boss;
 
         }
     }
+
+
+
     public int Mega(int health_enemy)//мега-атака, возвращает значение HP-противника
     {
-        if(power<=200)
+        if(power<=1000)
         {
-            health_enemy -= 30;
+            health_enemy -= 200;
         }
         return health_enemy;
+
     }
+    public void healing() //лечение
+    {
+        while(power<=2000)
+        {
+            power += 50;
+        }
+    }
+
 
 }

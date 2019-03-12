@@ -33,6 +33,14 @@ public class Warrior extends Human implements Damage {
 
         }
     }
+    public int Mega(int health_enemy)//мега-атака, возвращает значение HP-противника
+    {
+        if(power<=300)
+        {
+            health_enemy -= 50;
+        }
+        return health_enemy;
+    }
 
 
 
