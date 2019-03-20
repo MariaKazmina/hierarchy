@@ -5,7 +5,7 @@ public class Worker extends Human implements Damage{
 
     final  int damage_of_worker = 10; //константный урон
 
-    public int get_damage()//узнать константный урон
+    public int getDamage()//узнать константный урон
     {
         return damage_of_worker;
     }
@@ -26,7 +26,7 @@ public class Worker extends Human implements Damage{
         }
     }
 
-    public  void do_damage(int health_enemy) //нанесение урона
+    public  void doDamage(int health_enemy) //нанесение урона
     {
         if(health_enemy>0)
         {

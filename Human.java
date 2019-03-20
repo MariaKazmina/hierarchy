@@ -8,19 +8,19 @@ public  class Human
     protected  boolean superpowers;
     protected long power = 1000;
 
-    public int get_age()
+    public int getAge()
     {
         return age;
     }
-    public void set_age(int Age)
+    public void setAge(int Age)
     {
         this.age = Age;
     }
-    public char get_sex()
+    public char getSex()
     {
         return sex;
     }
-    public void set_sex(char S)
+    public void setSex(char S)
     {
         this.sex = S;
     }
